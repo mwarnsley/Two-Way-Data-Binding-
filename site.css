@@ -1,0 +1,36 @@
+body{
+	background: #7b4397; 
+	background: -webkit-linear-gradient(to left, #7b4397 , #dc2430); 
+	background: linear-gradient(to left, #7b4397 , #dc2430); 
+}
+
+label{
+	color: #ffffff;
+	display: inline-block;
+	width: 25%;
+}
+
+input[type=text]{
+	margin: 10px 0px;
+	padding: 15px 125px 15px 0px;
+}
+
+input[type=submit]{
+	background-color: #dc2430;
+	border: 0;
+	color: #ffffff;
+	font-size: 20px;
+    margin-top: 25px;
+    padding: 15px;
+    width: 100%;
+}
+
+#input-container{
+	margin-top: 50%;
+	width: 100%;
+}
+
+#contact-form-container{
+	margin-top: 50%;
+	width: 100%;
+}

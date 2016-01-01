@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Build Personal Contact Form</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="site.css" rel="stylesheet">
+	</head>
+	<body ng-app="myApp" ng-controller="myCtrl">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div id="input-container">
+						<form>
+						  <label>First Name:</label>
+						  <input type="text" name="fname" ng-model="user.firstName">
+						  <br>
+						  <label>Last Name:</label>
+						  <input type="text" name="lname" ng-model="user.lastName">
+						  <br>
+						  <label>Occupation</label>
+						  <input type="text" name="occupation" ng-model="user.occupation">
+						  <br>
+						  <label>Email:</label>
+						  <input type="text" name="email" ng-model="user.email">
+						  <br>
+						  <label>Phone Number:</label>
+						  <input type="text" name="phone" ng-model="user.phone">
+						  <br>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div id="contact-form-container">
+						<form>
+						  <label>First Name:</label>
+						  <input type="text" name="fname" value="{{user.firstName}}">
+						  <br>
+						  <label>Last Name:</label>
+						  <input type="text" name="lname" value="{{user.lastName}}">
+						  <br>
+						  <label>Occupation</label>
+						  <input type="text" name="occupation" value="{{user.occupation}}">
+						  <br>
+						  <label>Email:</label>
+						  <input type="text" name="email" value="{{user.email}}">
+						  <br>
+						  <label>Phone Number:</label>
+						  <input type="text" name="phone" value="{{user.phone}}">
+						  <br>
+						  <input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="controller.js"></script>
+	</body>
+</html>
